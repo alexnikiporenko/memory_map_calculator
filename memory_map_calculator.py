@@ -21,7 +21,7 @@ def memory_map_calculator(total_kb, top, *args): # arguments are in kilobytes
             memory2 -= n * 1024
             top_segments.append("\nTop segment " + str(len(top) - counter2) + ". Size = " + str(n) + "kb.\nFirst memory location = " + to_hex(memory2))
             counter2 += 1
-        top_segments.append("Unused memory. Last memory location = " + to_hex(memory2))
+        top_segments.append("Unused memory. Last memory location = " + to_hex(memory2 - 1))
         while len(top_segments) > 0:
             print(top_segments.pop())
     print(tot_mem)
