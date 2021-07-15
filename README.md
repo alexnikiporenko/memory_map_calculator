@@ -8,32 +8,32 @@ To solve the above question, run the function with the following values: `memory
 
 The output will be:
 
-`Memory segment 1. Size = 128kb.`
-`First memory location = 0h`
+`Memory segment 1. Size = 128kb.`<br>
+`First memory location = 0h`<br>
 `Last memory location = 1FFFFh`
 
-`Memory segment 2. Size = 512kb.`
-`First memory location = 20000h`
+`Memory segment 2. Size = 512kb.`<br>
+`First memory location = 20000h`<br>
 `Last memory location = 9FFFFh`
 
-`Unused memory. Size = 383.0kb.`
-`First memory location = A0000h`
+`Unused memory. Size = 383.0kb.`<br>
+`First memory location = A0000h`<br>
 `Unused memory. Last memory location = FFBFFh`
 
-`Top segment 1. Size = 0.25kb.`
-`First memory location = FFC00h`
+`Top segment 1. Size = 0.25kb.`<br>
+`First memory location = FFC00h`<br>
 `Last memory location = FFCFFh`
 
-`Top segment 2. Size = 0.25kb.`
-`First memory location = FFD00h`
+`Top segment 2. Size = 0.25kb.`<br>
+`First memory location = FFD00h`<br>
 `Last memory location = FFDFFh`
 
-`Top segment 3. Size = 0.25kb.`
-`First memory location = FFE00h`
+`Top segment 3. Size = 0.25kb.`<br>
+`First memory location = FFE00h`<br>
 `Last memory location = FFEFFh`
 
-`Top segment 4. Size = 0.25kb.`
-`First memory location = FFF00h`
+`Top segment 4. Size = 0.25kb.`<br>
+`First memory location = FFF00h`<br>
 `Last memory location = FFFFFh`
 
 `Total memory = 1024kb. Hex = FFFFFh`
