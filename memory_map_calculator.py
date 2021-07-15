@@ -5,13 +5,14 @@ def memory_map_calculator(total_kb, top, *args): # arguments are in kilobytes
     tot_mem = "\nTotal memory = " + str(total_kb) + "kb. Hex = " + to_hex(total_kb * 1024 - 1)
     counter = 0
     memory = 0
+    unused_size = total_kb - sum(top) - sum(args)
     for arg in args:
         counter += 1
         print("\nMemory segment " + str(counter) + ". Size = " + str(arg) + "kb.\nFirst memory location = " + to_hex(memory))
         memory += (arg * 1024 - 1)
         print("Last memory location = " + to_hex(memory))
         memory += 1
-    print("\nUnused memory. First memory location = " + to_hex(memory))
+    print("\nUnused memory. Size = " + str(unused_size) + "kb.\nFirst memory location = " + to_hex(memory))
     if top != 0:
         top_segments = []
         counter2 = 0
