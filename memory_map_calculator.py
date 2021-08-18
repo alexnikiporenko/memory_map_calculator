@@ -5,7 +5,9 @@ def memory_map_calculator(total_kb, top, *args): # arguments are in kilobytes
     tot_mem = "\nTotal memory = " + str(total_kb) + "kb. Hex = " + to_hex(total_kb * 1024 - 1)
     counter = 0
     memory = 0
-    unused_size = total_kb - sum(top) - sum(args)
+    unused_size = total_kb - sum(args)
+    if top != 0:
+        unused_size = unused_size - sum(top)
     for arg in args:
         counter += 1
         print("\nMemory segment " + str(counter) + ". Size = " + str(arg) + "kb.\nFirst memory location = " + to_hex(memory))
@@ -26,6 +28,7 @@ def memory_map_calculator(total_kb, top, *args): # arguments are in kilobytes
         while len(top_segments) > 0:
             print(top_segments.pop())
     print(tot_mem)
+
 
 # MEMORY MAP CALCULATOR
 # to calculate memory map in hex values, run the below function with the following arguments:
